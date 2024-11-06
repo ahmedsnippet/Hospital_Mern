@@ -51,7 +51,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const response = await axios.post(
-        "https://hospital-mern-w88b.vercel.app/api/v1/appointment/postAppointment",
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/appointment/postAppointment`,
         {
           firstName,
           lastName,
