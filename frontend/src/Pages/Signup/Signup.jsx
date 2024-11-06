@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post("https://hospital-mern.vercel.app/api/v1/user/patient/register", { firstName, lastName, email, phone, nic, dob, gender, password }, {
+      const response = await axios.post("https://hospital-mern-w88b.vercel.app/api/v1/user/patient/register", { firstName, lastName, email, phone, nic, dob, gender, password }, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json"
