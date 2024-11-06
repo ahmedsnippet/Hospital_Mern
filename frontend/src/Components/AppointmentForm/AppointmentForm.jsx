@@ -51,7 +51,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const response = await axios.post(
-        "/api/v1/appointment/postAppointment",
+        "http://localhost:8000/api/v1/appointment/postAppointment",
         {
           firstName,
           lastName,

@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("/api/v1/user/login", { email, password, role: "Patient" }, {
+            const response = await axios.post("http://localhost:8000/api/v1/user/login", { email, password, role: "Patient" }, {
                 withCredentials: true,
                 headers: {
                     "Content-Type": "application/json"
