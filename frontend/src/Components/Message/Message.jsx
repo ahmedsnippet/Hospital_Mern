@@ -12,7 +12,7 @@ const Message = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/message/sendMessage`, { firstName, lastName, email, phone, message }, {
+      const response = await axios.post("/api/v1/message/sendMessage", { firstName, lastName, email, phone, message }, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json"

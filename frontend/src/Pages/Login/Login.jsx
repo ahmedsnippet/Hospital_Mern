@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/v1/user/login`, { email, password, role: "Patient" }, {
+            const response = await axios.post("/api/v1/user/login", { email, password, role: "Patient" }, {
                 withCredentials: true,
                 headers: {
                     "Content-Type": "application/json"
