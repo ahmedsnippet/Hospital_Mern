@@ -12,7 +12,7 @@ const Message = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.post("http://localhost:8000/api/v1/message/sendMessage", { firstName, lastName, email, phone, message }, {
+      const response = await axios.post("https://hospital-mern.vercel.app/api/v1/message/sendMessage", { firstName, lastName, email, phone, message }, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json"
