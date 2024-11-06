@@ -11,7 +11,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false)
   const handlelogout = async () => {
     try {
-      const response = await axios.get("https://hospital-mern-w88b.vercel.app/api/v1/user/patient/logout", {
+      const response = await axios.get("http://localhost:8000/api/v1/user/patient/logout", {
         withCredentials: true
       })
       setIsAuthenticated(false)
